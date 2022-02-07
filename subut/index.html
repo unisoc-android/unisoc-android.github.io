@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Spreadtrum / Unisoc Bootloader Unlock Tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="col-md-7 col-lg-7">
+            <div class="wrap">
+                <div class="header-img"></div>
+                <div class="login-wrap p-4 p-md-5">
+                    <h3 class="mb-4">Spreadtrum / Unisoc Bootloader Unlock Tool</h3>
+                    <div class="form-group custom-input" id="custom-identifier-token">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="custom-identifier-token-checkbox">
+                            <label class="custom-control-label" for="custom-identifier-token-checkbox">Custom identifier token</label>
+                        </div>
+                        <input type="text" class="form-control mt-2" id="custom-identifier-token-text" placeholder="3033383537363031323531383536">
+                    </div>
+                    <div class="form-group custom-input" id="custom-private-key">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="custom-private-key-checkbox">
+                            <label class="custom-control-label" for="custom-private-key-checkbox">Custom private key</label>
+                        </div>
+                        <div class="custom-file mt-2">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button id="connect-button" class="form-control btn btn-primary rounded submit px-3">Connect
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <button id="unlock-button" class="form-control btn btn-primary rounded submit px-3" disabled>Unlock
+                        </button>
+                    </div>
+                    <p class="text-center">Device status: <span id="device-status">Disconnected</span></p>
+                </div>
+                <div class="text-center pb-2" id="credits">
+                    <p>Made by <a href="https://github.com/Iscle" target="_blank">Iscle</a></p>
+                    <p>Based on <a href="https://github.com/kdrag0n/fastboot.js" target="_blank">fastboot.js</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bs-custom-file-input.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jsrsasign-all-min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
+
